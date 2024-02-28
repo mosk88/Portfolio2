@@ -1,0 +1,68 @@
+:root {
+  --primarycolor: #ff274b;
+  --secoundcolor: #f7bcf7;
+  --lightcolor: #ffffff;
+  --bgcolor-1: #171a1c;
+  --bgcolor-2: #22282a;
+  --padding: 8%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  color: var(--lightcolor);
+}
+span {
+  color: var(--primarycolor);
+}
+h1 {
+  font-size: 2.2rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgcolor-1);
+}
+nav {
+  padding-top: 2.8rem;
+  padding-right: var(--padding);
+  padding-left: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+}
+nav ul li a {
+  color: var(--lightcolor);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  color: var(--primarycolor);
+}
+.btn {
+  background-color: var(--primarycolor);
+  color: var(--lightcolor);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.81rem 1.87rem;
+  border-radius: 30px;
+  border: solid 2px transparent;
+  transition: 0.4s;
+}
+.btn:hover {
+  background: transparent;
+  border: solid 2px var(--primarycolor);
+}
