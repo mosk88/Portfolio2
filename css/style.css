@@ -16,19 +16,46 @@ html {
   font-family: "Josefin Sans", sans-serif;
   color: var(--lightcolor);
 }
-span {
-  color: var(--primarycolor);
-}
 h1 {
+  font-size: 4.65rem;
+  margin: 1.7 rem 0;
+}
+h2 {
   font-size: 2.2rem;
   letter-spacing: 0.12rem;
   cursor: pointer;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+  margin: 1.7 rem 0;
+}
+h4 {
+  font-size: 1.25rem;
+  letter-spacing: 0.12rem;
+  color: var(--secoundcolor);
+}
+h5 {
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+span {
+  color: var(--primarycolor);
+}
+p {
+  color: var(--secoundcolor);
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+  font-size: 1rem;
 }
 
 .home {
   width: 100%;
   height: 100vh;
   background-color: var(--bgcolor-1);
+  display: flex;
+  flex-direction: column;
 }
 nav {
   padding-top: 2.8rem;
@@ -65,4 +92,71 @@ nav ul li a:hover {
 .btn:hover {
   background: transparent;
   border: solid 2px var(--primarycolor);
+}
+.content {
+  flex-grow: 1;
+  padding: 0 var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-texts {
+  position: relative;
+  bottom: 70px;
+}
+
+.social {
+  margin-top: 3.5rem;
+}
+.social img {
+  margin-right: 2rem;
+  width: 2.5rem;
+  transition: 0.4s;
+}
+.social img:hover {
+  transform: scale(1.2);
+}
+.home .container-images {
+  width: 45%;
+  height: 90%;
+
+  position: relative;
+  align-self: flex-end;
+}
+.home .container-images img {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.home .container-images:hover .shape {
+  bottom: 40px;
+}
+.home .container-images:hover .mypic {
+  left: 45%;
+}
+.about {
+  background-color: var(--bgcolor-2);
+  padding: 2rem var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about .container-images {
+  width: 35%;
+}
+.about .container-images img {
+  width: 90%;
+}
+.about .container-texts {
+  width: 35%;
+}
+.services {
+  background-color: var(--bgcolor-1);
+  padding: 2rem var(--padding);
+}
+.text-center {
+  text-align: center;
 }
