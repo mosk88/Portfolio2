@@ -49,7 +49,7 @@ p {
   line-height: 1.8rem;
   font-size: 1rem;
 }
-
+/* section home */
 .home {
   width: 100%;
   height: 100vh;
@@ -140,6 +140,7 @@ nav ul li a:hover {
 .home .container-images:hover .mypic {
   left: 45%;
 }
+/* section about */
 .about {
   background-color: var(--bgcolor-2);
   padding: 2rem var(--padding);
@@ -156,6 +157,7 @@ nav ul li a:hover {
 .about .container-texts {
   width: 35%;
 }
+/* section services */
 .services {
   background-color: var(--bgcolor-1);
   padding: 2rem var(--padding);
@@ -180,7 +182,7 @@ nav ul li a:hover {
   color: var(--primarycolor);
   margin: 2rem;
 }
-
+/* section skills */
 .skills {
   background-color: var(--bgcolor-2);
   padding: 2rem var(--padding);
@@ -215,9 +217,36 @@ nav ul li a:hover {
 .skill img {
   width: 70%;
 }
+/* section contact */
+.contact {
+  background-color: var(--bgcolor-1);
+  padding: 4rem var(--padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+textarea {
+  width: 350px;
+  height: 150px;
+}
+input {
+  width: 350px;
+}
+.form .btn {
+  position: relative;
+
+  left: 50%;
+  margin-top: 30px;
+  transform: translate(-50%, -50%);
+}
+/* section footer */
 footer {
   padding: 2rem var(--padding);
-  background-color: var(--bgcolor-1);
+  background-color: var(--bgcolor-2);
 }
 footer .content-footer {
   display: flex;
@@ -275,8 +304,10 @@ footer .content-footer .end {
     --padding: 1.5rem;
   }
   html {
-    font-size: 13px;
+    font-size: 9px;
+    text-align: center;
   }
+
   .home .container-images {
     display: none;
   }
@@ -312,7 +343,8 @@ footer .content-footer .end {
     margin: 50px;
   }
   .container-texts {
-    bottom: 0;
+    bottom: -10px;
+    padding-top: 5px;
   }
   .social {
     margin-top: 70px;
@@ -322,5 +354,44 @@ footer .content-footer .end {
   }
   #menu {
     display: block;
+    background-color: var(--bgcolor-2);
+  }
+  .about .container-images {
+    display: none;
+  }
+  .about .container-texts {
+    width: 100%;
+  }
+  .box {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .skills .container-images {
+    display: none;
+  }
+  .skills .container-skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills .container-skills .content-skills {
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .form .btn {
+    position: inherit;
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+  footer .content-footer p {
+    width: 100%;
   }
 }
