@@ -79,6 +79,9 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--primarycolor);
 }
+.logo {
+  background-color: #22282a;
+}
 .btn {
   background-color: var(--primarycolor);
   color: var(--lightcolor);
@@ -217,6 +220,30 @@ nav ul li a:hover {
 .skill img {
   width: 70%;
 }
+.box-projet {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+.project {
+  display: flex;
+}
+.card-projet {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  background-color: var(--bgcolor-1);
+  border-radius: 20px;
+  padding: 1.3rem 2rem;
+  margin: 2rem;
+  text-align: center;
+}
+.card-projet img {
+  width: 250px;
+}
 /* section contact */
 .contact {
   background-color: var(--bgcolor-1);
@@ -345,6 +372,9 @@ footer .content-footer .end {
   .container-texts {
     bottom: -10px;
     padding-top: 5px;
+  }
+  .logo {
+    display: none;
   }
   .social {
     margin-top: 70px;
