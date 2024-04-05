@@ -225,7 +225,7 @@ nav ul li a:hover {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: -3rem;
 }
 .project {
   display: flex;
@@ -397,6 +397,10 @@ footer .content-footer .end {
     flex-wrap: wrap;
     gap: 1rem;
   }
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
   .skills .container-images {
     display: none;
   }
@@ -407,10 +411,15 @@ footer .content-footer .end {
     justify-content: center;
     flex-direction: column;
   }
+
   .skills .container-skills .content-skills {
     margin-top: 2rem;
     align-items: center;
     justify-content: center;
+  }
+  .box-projcet {
+    display: flex;
+    flex-direction: column;
   }
   .contact {
     display: flex;
